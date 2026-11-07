@@ -1,0 +1,8 @@
+<!-- SOC Lab: Ubuntu 24.04 usermod group-add format, e.g.
+     usermod[9411]: add 'backdoor' to group 'sudo' -->
+<decoder name="usermod-group-add">
+  <program_name>^usermod$</program_name>
+  <prematch type="pcre2">^add \x27[^\x27]+\x27 to group </prematch>
+  <regex type="pcre2">^add \x27([^\x27]+)\x27 to group \x27([^\x27]+)\x27$</regex>
+  <order>dstuser, group</order>
+</decoder>

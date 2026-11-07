@@ -1,0 +1,23 @@
+2026-11-01T13:50:03.653352+00:00 khaid-test sshd[7590]: Invalid user attacker from 172.16.15.1 port 49475
+2026-11-01T13:50:03.656689+00:00 khaid-test sshd[7590]: Connection closed by invalid user attacker 172.16.15.1 port 49475 [preauth]
+2026-11-01T13:50:03.722457+00:00 khaid-test sshd[7592]: Invalid user attacker from 172.16.15.1 port 49476
+2026-11-01T13:50:03.724356+00:00 khaid-test sshd[7592]: Connection closed by invalid user attacker 172.16.15.1 port 49476 [preauth]
+2026-11-01T13:50:03.791499+00:00 khaid-test sshd[7594]: Invalid user attacker from 172.16.15.1 port 49477
+2026-11-01T13:50:03.793311+00:00 khaid-test sshd[7594]: Connection closed by invalid user attacker 172.16.15.1 port 49477 [preauth]
+2026-11-01T13:50:03.858327+00:00 khaid-test sshd[7596]: Invalid user attacker from 172.16.15.1 port 49478
+2026-11-01T13:50:03.860938+00:00 khaid-test sshd[7596]: Connection closed by invalid user attacker 172.16.15.1 port 49478 [preauth]
+2026-11-01T13:50:03.933250+00:00 khaid-test sshd[7598]: Invalid user attacker from 172.16.15.1 port 49479
+2026-11-01T13:50:03.935448+00:00 khaid-test sshd[7598]: Connection closed by invalid user attacker 172.16.15.1 port 49479 [preauth]
+2026-11-01T13:50:04.010151+00:00 khaid-test sshd[7600]: Invalid user attacker from 172.16.15.1 port 49480
+2026-11-01T13:50:04.012355+00:00 khaid-test sshd[7600]: Connection closed by invalid user attacker 172.16.15.1 port 49480 [preauth]
+2026-11-01T13:50:04.089682+00:00 khaid-test sshd[7602]: Invalid user attacker from 172.16.15.1 port 49481
+2026-11-01T13:50:04.091652+00:00 khaid-test sshd[7602]: Connection closed by invalid user attacker 172.16.15.1 port 49481 [preauth]
+2026-11-01T13:50:04.164471+00:00 khaid-test sshd[7604]: Invalid user attacker from 172.16.15.1 port 49482
+2026-11-01T13:50:04.166984+00:00 khaid-test sshd[7604]: Connection closed by invalid user attacker 172.16.15.1 port 49482 [preauth]
+2026-11-01T13:50:04.245329+00:00 khaid-test sshd[7606]: Invalid user attacker from 172.16.15.1 port 49483
+2026-11-01T13:50:04.247417+00:00 khaid-test sshd[7606]: Connection closed by invalid user attacker 172.16.15.1 port 49483 [preauth]
+2026-11-01T13:50:04.328799+00:00 khaid-test sshd[7608]: Invalid user attacker from 172.16.15.1 port 49484
+2026-11-01T13:50:04.330738+00:00 khaid-test sshd[7608]: Connection closed by invalid user attacker 172.16.15.1 port 49484 [preauth]
+2026-11-01T13:50:17.082657+00:00 khaid-test sudo:   khalid : PWD=/home/khalid ; USER=root ; COMMAND=/usr/bin/grep -h attacker\\|5712\\|5710\\|5551\\|5758 /var/ossec/logs/alerts/alerts.log
+2026-11-01T14:10:59.528266+00:00 khaid-test sudo:   khalid : PWD=/home/khalid ; USER=root ; COMMAND=/usr/bin/grep -h attacker /var/log/auth.log
+2026-11-01T14:11:07.121457+00:00 khaid-test sudo:   khalid : PWD=/home/khalid ; USER=root ; COMMAND=/usr/bin/grep -h attacker /var/log/auth.log

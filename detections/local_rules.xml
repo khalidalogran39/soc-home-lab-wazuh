@@ -1,0 +1,44 @@
+<!-- SOC Lab: detection gap fix — built-in rule 2961 never fires on Ubuntu 24.04 -->
+<group name="local,account_management,">
+  <rule id="100100" level="8">
+    <decoded_as>usermod-group-add</decoded_as>
+    <description>usermod: user $(dstuser) added to group $(group).</description>
+    <mitre>
+      <id>T1098</id>
+    </mitre>
+    <group>account_changed,pci_dss_10.2.5,</group>
+  </rule>
+
+  <rule id="100101" level="12">
+    <if_sid>100100</if_sid>
+    <field name="group">^sudo$|^admin$|^wheel$</field>
+    <description>Privilege escalation: user $(dstuser) added to privileged group $(group).</description>
+    <mitre>
+      <id>T1098</id>
+      <id>T1078.003</id>
+    </mitre>
+    <group>privilege_escalation,pci_dss_10.2.5,nist_800_53_AC.6,</group>
+  </rule>
+</group>
+<!-- SOC Lab: raise severity of FIM events on high-value files -->
+<group name="local,syscheck,">
+  <rule id="100110" level="12">
+    <if_sid>550,553,554</if_sid>
+    <field name="file">^/etc/sudoers</field>
+    <description>Sudoers configuration changed ($(file)): possible privilege backdoor.</description>
+    <mitre>
+      <id>T1548.003</id>
+    </mitre>
+    <group>privilege_escalation,pci_dss_10.5.5,nist_800_53_AC.6,</group>
+  </rule>
+
+  <rule id="100111" level="10">
+    <if_sid>550</if_sid>
+    <field name="file">^/etc/hosts$</field>
+    <description>Hosts file modified: possible DNS redirection / traffic hijack.</description>
+    <mitre>
+      <id>T1565.001</id>
+    </mitre>
+    <group>pci_dss_11.5,nist_800_53_SI.7,</group>
+  </rule>
+</group>

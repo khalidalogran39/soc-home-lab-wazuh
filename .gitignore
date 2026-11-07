@@ -1,0 +1,18 @@
+# Local helper scripts and logs used to bootstrap this specific machine
+lab-setup/
+
+# Personal notes, not part of the repository
+linkedin-post.md
+
+# Credentials and keys must never be committed
+*passwords*.txt
+wazuh-install-files.tar
+*.pem
+*.key
+id_*
+soc_lab*
+
+.DS_Store
+
+# LinkedIn post assets (personal)
+linkedin/

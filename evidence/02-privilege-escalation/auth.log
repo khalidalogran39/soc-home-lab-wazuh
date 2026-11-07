@@ -1,0 +1,10 @@
+2026-11-01T17:30:48.051805+00:00 khaid-test useradd[9400]: new group: name=backdoor, GID=1001
+2026-11-01T17:30:48.056058+00:00 khaid-test useradd[9400]: new user: name=backdoor, UID=1001, GID=1001, home=/home/backdoor, shell=/bin/sh, from=/dev/pts/1
+2026-11-01T17:31:00.660145+00:00 khaid-test usermod[9411]: add 'backdoor' to group 'sudo'
+2026-11-01T17:31:00.688809+00:00 khaid-test usermod[9411]: add 'backdoor' to shadow group 'sudo'
+2026-11-05T13:17:28.641463+00:00 khaid-test gpasswd[24332]: user backdoor removed by root from group sudo
+2026-11-05T13:17:28.646266+00:00 khaid-test usermod[24341]: add 'backdoor' to group 'sudo'
+2026-11-05T13:17:28.646343+00:00 khaid-test usermod[24341]: add 'backdoor' to shadow group 'sudo'
+2026-11-05T13:18:12.030251+00:00 khaid-test gpasswd[29215]: user backdoor removed by root from group sudo
+2026-11-05T13:18:12.035863+00:00 khaid-test usermod[29222]: add 'backdoor' to group 'sudo'
+2026-11-05T13:18:12.035931+00:00 khaid-test usermod[29222]: add 'backdoor' to shadow group 'sudo'

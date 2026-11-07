@@ -1,0 +1,2 @@
+    <!-- SOC Lab: realtime FIM on high-value files -->
+    <directories realtime="yes" report_changes="yes" check_all="yes">/etc/hosts,/etc/passwd,/etc/group,/etc/sudoers,/etc/sudoers.d,/etc/ssh/sshd_config,/etc/crontab,/etc/cron.d</directories>
