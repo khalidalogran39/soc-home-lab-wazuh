@@ -110,3 +110,6 @@ Want to rebuild the lab? See [docs/SETUP.md](docs/SETUP.md).
 - **Domain 4** — Security Operations (alerting & monitoring, IAM, enhancing capabilities, incident response, investigation)
 
 > All activity was performed in an isolated lab on equipment I own. No production or employer data is included.
+
+## Author
+**Khalid Alogran** — CompTIA Security+ (SY0-701) · [GitHub](https://github.com/khalidalogran39)
